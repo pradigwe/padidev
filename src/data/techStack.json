@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Java",
+        "category": "technologies"
+    },
+    {
+        "id": 2,
+        "name": "Python",
+        "category": "technologies"
+    },
+    {
+        "id": 3,
+        "name": "HTML",
+        "category": "technologies"
+    },
+    {
+        "id": 4,
+        "name": "CSS",
+        "category": "technologies"
+    },
+    {
+        "id": 5,
+        "name": "Javascript",
+        "category": "technologies"
+    },
+    {
+        "id": 6,
+        "name": "TypeScript",
+        "category": "technologies"
+    },
+    {
+        "id": 7,
+        "name": "React",
+        "category": "frameworks"
+    },
+    {
+        "id": 8,
+        "name": "MySQL",
+        "category": "tools"
+    },
+    {
+        "id": 9,
+        "name": "Git",
+        "category": "tools"
+    },
+    {
+        "id": 10,
+        "name": "Spring",
+        "category": "frameworks"
+    },
+    {
+        "id": 11,
+        "name": "VS Code",
+        "category": "tools"
+    }
+]
