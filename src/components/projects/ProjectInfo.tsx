@@ -1,9 +1,5 @@
-
 function ProjectInfo() {
-    return (
-        <>
-        </>
-    )
+  return <></>;
 }
 
 export default ProjectInfo;

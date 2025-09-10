@@ -5,15 +5,15 @@
 // import Contact from './components/Contact.tsx';
 
 function Homepage() {
-    return (
-        <>
-            {/* <About />
+  return (
+    <>
+      {/* <About />
             <Projects />
             <Technologies />
             <Navigation />
             <Contact /> */}
-        </>
-    )
+    </>
+  );
 }
 
 export default Homepage;
