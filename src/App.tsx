@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import About from './components/About.tsx'
-import Projects from './components/Projects.tsx';
-import Technologies from './components/Technologies.tsx';
+import Projects from './components/projects/Projects.tsx';
+import Technologies from './components/technologies/Technologies.tsx';
 import Navigation from './components/Navigation.tsx';
 import Contact from './components/Contact.tsx';
 import Footer from './components/Footer.tsx'
