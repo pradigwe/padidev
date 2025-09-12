@@ -16,8 +16,12 @@ function Technologies() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedTech, setSelectedTech] = useState<Tech | null>(null);
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
+  const openModal = (technology: Tech) => {
+    setIsModalOpen(true);
+    setSelectedTech(technology);
+  };
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -69,16 +73,20 @@ function Technologies() {
               key={tech.id}
               className={`tech-card ${tech.category}`}
               onClick={() => {
-                setSelectedTech(tech);
-                toggleModal();
-                console.log(isModalOpen);
+                openModal(tech);
               }}
             >
               {tech.name}
             </li>
           ))}
       </ul>
-      {<TechModal technology={selectedTech} />}
+      {
+        <TechModal
+          isModalOpen={isModalOpen}
+          technology={selectedTech}
+          onClose={closeModal}
+        />
+      }
     </section>
   );
 }

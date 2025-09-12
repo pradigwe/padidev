@@ -1,13 +1,34 @@
-// import { projectList } from '../projects/Projects';
+import { projectList } from "../projects/Projects";
 import type { Tech } from "./Technologies";
+import MinimizeIcon from "../../assets/project-images/minimize-svgrepo-com.svg?react";
 
-function TechModal({ technology }: { technology: Tech | null }) {
-  if (!technology) return null;
+interface TechModalProps {
+  isModalOpen: boolean;
+  technology: Tech | null;
+  onClose: () => void;
+}
+
+function TechModal({ isModalOpen, technology, onClose }: TechModalProps) {
+  if (!technology || !isModalOpen) return null;
   return (
     <div>
-      <p> Opened modal: {technology.name}</p>
-      <p> Opened modal category: {technology.category}</p>
+      <h3>{technology.name}</h3>
+      <h4>
+        <span className="strong">Category: </span>
+        {technology.category}
+      </h4>
+      <ul>
+        {projectList
+          .filter((project) =>
+            project.techStack.some((tech) => tech === technology.name)
+          )
+          .map((project) => (
+            <li key={project.id}>{project.name}</li>
+          ))}
+      </ul>
+      <MinimizeIcon onClick={onClose} />
     </div>
   );
 }
+
 export default TechModal;
