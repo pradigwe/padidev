@@ -15,6 +15,10 @@ function About() {
           contributing to projects that make a real impact.
         </p>
       </div>
+      <img
+        src={new URL(`../assets/mypicture.jpg`, import.meta.url).href}
+        alt="picture of me"
+      />
     </section>
   );
 }
