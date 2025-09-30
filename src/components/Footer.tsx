@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <p>Footer</p>
+      <p>Designed & Built by Precious Adigwe</p>
     </footer>
   );
 }
