@@ -21,25 +21,28 @@ function Projects() {
   const openModal = (project: Project) => {
     setIsModalOpen(true);
     setSelectedProject(project);
-  }
+  };
 
   const closeModal = () => {
     setIsModalOpen(false);
-  }
+  };
 
   return (
     <section>
       <h3>Projects</h3>
       {projectList.map((project) => (
-        <li key={project.id} 
-        className="project-card" 
-        onClick={() => {openModal(project);}}
+        <li
+          key={project.id}
+          className="project-card"
+          onClick={() => {
+            openModal(project);
+          }}
         >
           {project.name}
           {project.screenshot && (
             <img
-              className="project-image" 
-              width={240} 
+              className="project-image"
+              width={240}
               src={
                 new URL(
                   `../../assets/project-images/${project.screenshot}`,
@@ -54,9 +57,9 @@ function Projects() {
       ))}
       {
         <ProjectModal
-         isModalOpen={isModalOpen} 
-         project={selectedProject} 
-         onClose= {closeModal}
+          isModalOpen={isModalOpen}
+          project={selectedProject}
+          onClose={closeModal}
         />
       }
     </section>

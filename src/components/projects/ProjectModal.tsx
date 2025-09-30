@@ -20,7 +20,7 @@ function ProjectModal({ isModalOpen, project, onClose }: ProjectModalProps) {
                 import.meta.url
               ).href
             }
-            alt= {`Screenshot of my ${project.name} project`}
+            alt={`Screenshot of my ${project.name} project`}
           />
         ) : null}
       </span>
@@ -39,7 +39,7 @@ function ProjectModal({ isModalOpen, project, onClose }: ProjectModalProps) {
           </a>
         ) : null}
       </div>
-      
+
       <MinimizeIcon onClick={onClose} />
     </div>
   );
