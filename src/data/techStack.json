@@ -2,56 +2,67 @@
   {
     "id": 1,
     "name": "Java",
-    "category": "technologies"
+    "category": "technologies",
+    "projectDropdowns": true
   },
   {
     "id": 2,
     "name": "Python",
-    "category": "technologies"
+    "category": "technologies",
+    "projectDropdowns": true
   },
   {
     "id": 3,
     "name": "HTML",
-    "category": "technologies"
+    "category": "technologies",
+    "projectDropdowns": true
   },
   {
     "id": 4,
     "name": "CSS",
-    "category": "technologies"
+    "category": "technologies",
+    "projectDropdowns": true
   },
   {
     "id": 5,
-    "name": "Javascript",
-    "category": "technologies"
+    "name": "JavaScript",
+    "category": "technologies",
+    "projectDropdowns": true
   },
   {
     "id": 6,
     "name": "TypeScript",
-    "category": "technologies"
+    "category": "technologies",
+    "projectDropdowns": true
   },
   {
     "id": 7,
     "name": "React",
-    "category": "frameworks"
+    "category": "frameworks",
+    "projectDropdowns": true
   },
   {
     "id": 8,
     "name": "MySQL",
-    "category": "tools"
+    "category": "tools",
+    "projectDropdowns": true
   },
   {
     "id": 9,
     "name": "Git",
-    "category": "tools"
+    "category": "tools",
+    "projectDropdowns": false
   },
   {
     "id": 10,
     "name": "Spring",
-    "category": "frameworks"
+    "category": "frameworks",
+    "projectDropdowns": true
   },
   {
     "id": 11,
     "name": "VS Code",
-    "category": "tools"
+    "category": "tools",
+    "projectDropdowns": false
   }
 ]

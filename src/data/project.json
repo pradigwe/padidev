@@ -2,24 +2,48 @@
   {
     "id": 1,
     "name": "Palindrome Checker",
-    "techStack": ["HTML", "CSS", "Javascript"],
-    "github": "https://github.com/pradigwe/palindrome-checker"
+    "screenshot": "palindrome-checker.png",
+    "description": "Web app that checks if a word or sentence is a palindrome, ignoring spaces, punctuation, and case.",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/pradigwe/palindrome-checker",
+    "liveLink": "https://pradigwe.github.io/palindrome-checker/"
   },
   {
     "id": 2,
     "name": "Roman Numeral Validator",
-    "techStack": ["HTML", "CSS", "Javascript"],
-    "github": "https://github.com/pradigwe/roman-numeral-converter"
+    "screenshot": "roman-numeral-converter.png",
+    "description": "Web app that converts numbers (1-3999) into Roman numerals with real-time validation.",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/pradigwe/roman-numeral-converter",
+    "liveLink": "https://pradigwe.github.io/roman-numeral-converter/"
   },
   {
     "id": 3,
     "name": "Phone Number Validator",
-    "techStack": ["HTML", "CSS", "Javascript"],
+    "description": "Interactive web app that validates US phone numbers and displays results in a chat-style interface.",
+    "techStack": ["HTML", "CSS", "JavaScript"],
     "github": "https://github.com/pradigwe/phone-number-validator"
   },
   {
     "id": 4,
     "name": "Personal Website",
-    "techStack": ["HTML", "CSS", "Typescript", "React"]
+    "description": "Personal webpage showcasing HTML & CSS skills, custom projects, and interactive features for ITIS 3135.",
+    "techStack": ["HTML", "CSS", "TypeScript", "React"],
+    "github": "https://github.com/pradigwe/padidev"
+  },
+  {
+    "id": 5,
+    "name": "Rock Paper Scissors",
+    "description": "A Java-based Rock, Paper, Scissors game featuring both a terminal and GUI version, showcasing core game logic, input handling, and user interface design.",
+    "techStack": ["Java", "Swing"],
+    "github": "https://github.com/pradigwe/rock_paper_scissors"
+  },
+  {
+    "id": 6,
+    "name": "ITIS 3135 Class Webpage",
+    "description": "Personal webpage showcasing HTML & CSS skills, custom projects, and interactive features for ITIS 3135.",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/pradigwe/pradigwe.github.io",
+    "liveLink": "https://pradigwe.github.io/"
   }
 ]

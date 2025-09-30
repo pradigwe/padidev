@@ -9,7 +9,7 @@ interface TechModalProps {
 }
 
 function TechModal({ isModalOpen, technology, onClose }: TechModalProps) {
-  if (!technology || !isModalOpen) return null;
+  if (!technology || !isModalOpen || !technology.projectDropdowns) return null;
   return (
     <div>
       <h3>{technology.name}</h3>

@@ -7,6 +7,7 @@ export interface Tech {
   name: string;
   // icon: string;
   category: "frameworks" | "technologies" | "tools";
+  projectDropdowns: boolean;
 }
 // affirms that the array matches the interface
 const techs = techStack as Tech[];
