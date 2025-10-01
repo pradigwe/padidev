@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ProjectModal from "./ProjectModal";
-import projectData from "../../data/project.json";
+import { projectList } from "./ProjectList";
 
 export interface Project {
   readonly id: number;
@@ -12,7 +12,7 @@ export interface Project {
   liveLink?: string;
 }
 
-export const projectList = projectData as Project[];
+
 
 function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
