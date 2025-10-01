@@ -1,4 +1,4 @@
-import { projectList } from "../projects/Projects";
+import { projectList } from "../projects/ProjectList";
 import type { Tech } from "./Technologies";
 import MinimizeIcon from "../../assets/minimize-svgrepo-com.svg?react";
 
@@ -20,7 +20,7 @@ function TechModal({ isModalOpen, technology, onClose }: TechModalProps) {
       <ul>
         {projectList
           .filter((project) =>
-            project.techStack.some((tech) => tech === technology.name)
+            project.techStack.some((tech) => tech === technology.name),
           )
           .map((project) => (
             <li key={project.id}>{project.name}</li>
