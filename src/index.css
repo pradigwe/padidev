@@ -1,1 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #f7f6ef;
+  --color-secondary: #6c5234;
+  --color-neutral1: #afa386;
+  --color-neutral2: #546745;
+  --color-accent: #4e351e;
+
+  --font-header: "Barriecito", sans;
+  --font-text: "Arial", sans-serif;
+}
+
+@layer base {
+  h1 {
+    @apply font-header text-6xl;
+  }
+  h2 {
+    @apply font-header text-5xl;
+  }
+
+  h3 {
+    @apply font-header;
+  }
+  p {
+    @apply font-text  text-xl/normal text-black;
+  }
+}
+
+@layer components {
+  .nav-icon {
+    @apply size-9;
+  }
+}

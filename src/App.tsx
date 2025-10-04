@@ -1,4 +1,5 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import MobileHero from "./components/MobileHero.tsx";
 import About from "./components/About.tsx";
 import Projects from "./components/projects/Projects.tsx";
 import Technologies from "./components/technologies/Technologies.tsx";
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <Router>
+        <MobileHero />
         <Navigation />
 
         <Routes>
@@ -32,13 +34,5 @@ function App() {
       </Router>
     </>
   );
-}
-
-{
-  /* <Navigation />
-            
-            <Technologies />
-            <Projects />
-            <Contact /> */
 }
 export default App;
