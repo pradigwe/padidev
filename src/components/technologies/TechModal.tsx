@@ -1,6 +1,6 @@
 import { projectList } from "../projects/ProjectList";
 import type { Tech } from "./Technologies";
-import MinimizeIcon from "../../assets/minimize-svgrepo-com.svg?react";
+import MinimizeIcon from "../../assets/icons8-minimize-svgrepo-com.svg?react";
 
 interface TechModalProps {
   isModalOpen: boolean;

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import HomeButton from "../assets/home-button.svg?react";
-import ProjectButton from "../assets/projects-button.svg?react";
-import ToolsButton from "../assets/tools-button.svg?react";
+import HomeButton from "../assets/icons8-home-button.svg?react";
+import ProjectButton from "../assets/icons8-projects-button.svg?react";
+import ToolsButton from "../assets/icons8-tools-button.svg?react";
 
 function Navigation() {
   return (

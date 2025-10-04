@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -8,28 +10,42 @@
   --color-neutral2: #546745;
   --color-accent: #4e351e;
 
-  --font-header: "Barriecito", sans;
-  --font-text: "Arial", sans-serif;
+  --font-barriecito: "Barriecito", sans;
+  --font-arial: "Arial", sans-serif;
+  --font-inter: "Inter", sans;
+  --font-barlow-semi: "Barlow Semi Condensed", sans-serif;
 }
 
 @layer base {
   h1 {
-    @apply font-header text-6xl;
+    @apply font-barriecito text-6xl;
   }
   h2 {
-    @apply font-header text-5xl;
+    @apply font-barriecito text-center text-5xl;
   }
 
   h3 {
-    @apply font-header;
+    @apply font-barriecito;
   }
   p {
-    @apply font-text  text-xl/normal text-black;
+    @apply font-arial text-xl/normal text-black;
   }
 }
 
 @layer components {
   .nav-icon {
     @apply size-9;
+  }
+
+  .tech-category {
+    @apply relative z-0 flex self-center;
+  }
+
+  .selected-category {
+    @apply font-arial bg-neutral2 px-4 py-2 font-bold text-white;
+  }
+
+  .tech-card {
+    @apply bg-secondary font-barlow-semi px-3 text-center text-lg text-white;
   }
 }

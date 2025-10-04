@@ -1,5 +1,5 @@
 import type { Project } from "./Projects";
-import MinimizeIcon from "../../assets/minimize-svgrepo-com.svg?react";
+import MinimizeIcon from "../../assets/icons8-minimize-svgrepo-com.svg?react";
 
 interface ProjectModalProps {
   isModalOpen: boolean;

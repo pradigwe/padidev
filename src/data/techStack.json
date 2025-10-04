@@ -2,66 +2,98 @@
   {
     "id": 1,
     "name": "Java",
+    "icon": "java-svgrepo-com.svg",
     "category": "technologies",
     "projectDropdowns": true
   },
   {
     "id": 2,
     "name": "Python",
+    "icon": "python-svgrepo-com.svg",
     "category": "technologies",
     "projectDropdowns": true
   },
   {
     "id": 3,
     "name": "HTML",
+    "icon": "html-5-svgrepo-com.svg",
     "category": "technologies",
     "projectDropdowns": true
   },
   {
     "id": 4,
     "name": "CSS",
+    "icon": "css-3-svgrepo-com.svg",
     "category": "technologies",
     "projectDropdowns": true
   },
   {
     "id": 5,
     "name": "JavaScript",
+    "icon": "javascript-svgrepo-com.svg",
     "category": "technologies",
     "projectDropdowns": true
   },
   {
     "id": 6,
     "name": "TypeScript",
+    "icon": "typescript-official-svgrepo-com.svg",
     "category": "technologies",
     "projectDropdowns": true
   },
   {
     "id": 7,
+    "icon": "react-svgrepo-com.svg",
     "name": "React",
     "category": "frameworks",
     "projectDropdowns": true
   },
   {
-    "id": 8,
+    "id":8,
+    "icon": "tailwind-svgrepo-com.svg",
+    "name": "Tailwind CSS",
+    "category": "frameworks",
+    "projectDropdowns": true
+  },
+  {
+    "id": 9,
+    "icon": "mysql-logo-svgrepo-com.svg",
     "name": "MySQL",
     "category": "tools",
     "projectDropdowns": true
   },
   {
-    "id": 9,
+    "id": 10,
+    "icon": "git-svgrepo-com.svg",
     "name": "Git",
     "category": "tools",
     "projectDropdowns": false
   },
   {
-    "id": 10,
+    "id": 11,
+    "icon": "spring-svgrepo-com.svg",
     "name": "Spring",
     "category": "frameworks",
     "projectDropdowns": true
   },
   {
-    "id": 11,
+    "id": 12,
+    "icon": "vs-code-svgrepo-com.svg",
     "name": "VS Code",
+    "category": "tools",
+    "projectDropdowns": false
+  },
+  {
+    "id": 13,
+    "icon": "icons8-c-programming.svg",
+    "name": "C",
+    "category": "technologies",
+    "projectDropdowns": true
+  },
+  {
+    "id": 14,
+    "icon": "vite-svgrepo-com.svg",
+    "name": "Vite",
     "category": "tools",
     "projectDropdowns": false
   }
