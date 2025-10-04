@@ -46,6 +46,6 @@
   }
 
   .tech-card {
-    @apply bg-secondary font-barlow-semi px-3 text-center text-lg text-white;
+    @apply bg-secondary font-barlow-semi px-3 text-center text-lg text-white flex gap-2 flex-nowrap py-2 rounded-xl;
   }
 }

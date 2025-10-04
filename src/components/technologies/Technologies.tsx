@@ -5,7 +5,7 @@ import TechModal from "./TechModal";
 export interface Tech {
   id: number;
   name: string;
-  // icon: string;
+  icon: string;
   category: "frameworks" | "technologies" | "tools";
   projectDropdowns: boolean;
 }
@@ -26,11 +26,11 @@ function Technologies() {
   };
 
   return (
-    <section>
-      <h2>Technologies & Tools</h2>
-      <ul>
+    <section className="flex h-dvh flex-col items-center justify-center">
+      <h2 className="mb-10 w-4/5">Technologies & Tools</h2>
+      <ul className="flex gap-3 text-lg">
         <li
-          className="tech-category all"
+          className="tech-category all selected-category"
           onClick={() => {
             setCurrentCategory("all");
           }}
@@ -63,22 +63,34 @@ function Technologies() {
         </li>
       </ul>
       <div className="divider"></div>
-      <ul>
+      <ul className="mt-5 flex max-w-xl flex-wrap justify-center gap-x-2 gap-y-3">
         {techs
           .filter(
             (tech) =>
-              currentCategory === "all" || tech.category === currentCategory
+              currentCategory === "all" || tech.category === currentCategory,
           )
+          .sort((a, b) => a.category.localeCompare(b.category))
           .map((tech) => (
-            <li
-              key={tech.id}
-              className={`tech-card ${tech.category}`}
-              onClick={() => {
-                openModal(tech);
-              }}
-            >
-              {tech.name}
-            </li>
+            <div className={`tech-card`}>
+              <img
+                className="w-7"
+                src={
+                  new URL(
+                    `../../assets/tech-images/${tech.icon}?react`,
+                    import.meta.url,
+                  ).href
+                }
+                alt={`${tech.name} icon`}
+              />
+              <li
+                key={tech.id}
+                onClick={() => {
+                  openModal(tech);
+                }}
+              >
+                {tech.name}
+              </li>
+            </div>
           ))}
       </ul>
       {
