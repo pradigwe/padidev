@@ -25,7 +25,7 @@
   }
 
   h3 {
-    @apply font-barriecito;
+    @apply font-barriecito text-3xl;
   }
   p {
     @apply font-arial text-xl/normal text-black;
@@ -46,6 +46,6 @@
   }
 
   .tech-card {
-    @apply bg-secondary font-barlow-semi px-3 text-center text-lg text-white flex gap-2 flex-nowrap py-2 rounded-xl;
+    @apply bg-secondary font-barlow-semi px-3 text-center text-lg text-white flex gap-2 flex-nowrap py-2 rounded-md;
   }
 }
