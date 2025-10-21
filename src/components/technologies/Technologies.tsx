@@ -13,7 +13,7 @@ export interface Tech {
 const techs = techStack as Tech[];
 
 function Technologies() {
-  const [currentCategoryId, setCurrentCategoryId] = useState(1);
+  const [currentCategoryId, setCurrentCategoryId] = useState(0);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedTech, setSelectedTech] = useState<Tech | null>(null);
