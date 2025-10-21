@@ -27,8 +27,8 @@
   {
     "id": 4,
     "name": "Personal Website",
-    "description": "Personal webpage showcasing HTML & CSS skills, custom projects, and interactive features for ITIS 3135.",
-    "techStack": ["HTML", "CSS", "TypeScript", "React"],
+    "description": "",
+    "techStack": ["HTML", "CSS", "TypeScript", "JavaScript","React", "Tailwind CSS"],
     "github": "https://github.com/pradigwe/padidev"
   },
   {

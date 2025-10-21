@@ -8,13 +8,12 @@ export interface Tech {
   name: string;
   icon: string;
   category: "frameworks" | "technologies" | "tools";
-  projectDropdowns: boolean;
 }
 // affirms that the array matches the interface
 const techs = techStack as Tech[];
 
 function Technologies() {
-  const [currentCategory, setCurrentCategory] = useState("all");
+  const [currentCategoryId, setCurrentCategoryId] = useState(1);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedTech, setSelectedTech] = useState<Tech | null>(null);
@@ -34,50 +33,38 @@ function Technologies() {
     setTechProjects([]);
   };
 
+  const categories = [
+    { id: 0, name: "All" },
+    { id: 1, name: "Frameworks" },
+    { id: 2, name: "Technologies" },
+    { id: 3, name: "Tools" },
+  ];
+
   return (
     <section className="flex h-dvh flex-col items-center justify-center">
       <h2 className="mb-10 w-4/5">Technologies & Tools</h2>
       <div className="basis-1/2">
-        <ul className="flex gap-3 text-lg">
-          <li
-            className="tech-category all selected-category"
-            onClick={() => {
-              setCurrentCategory("all");
-            }}
-          >
-            All
-          </li>
-          <li
-            className="tech-category frameworks"
-            onClick={() => {
-              setCurrentCategory("frameworks");
-            }}
-          >
-            Frameworks
-          </li>
-          <li
-            className="tech-category technologies"
-            onClick={() => {
-              setCurrentCategory("technologies");
-            }}
-          >
-            Technologies
-          </li>
-          <li
-            className="tech-category tools"
-            onClick={() => {
-              setCurrentCategory("tools");
-            }}
-          >
-            Tools
-          </li>
+        <ul className="flex items-center gap-3 text-lg">
+          {categories.map((category) => (
+            <li
+              key={category.id}
+              className={`${currentCategoryId == category.id ? "selected-category" : ""} `}
+              onClick={() => {
+                setCurrentCategoryId(category.id);
+              }}
+            >
+              {category.name}
+            </li>
+          ))}
         </ul>
         <div className="divider"></div>
         <ul className="mt-5 flex max-w-xl flex-wrap justify-center gap-x-2 gap-y-3">
           {techs
             .filter(
               (tech) =>
-                currentCategory === "all" || tech.category === currentCategory,
+                categories[currentCategoryId].name.toLowerCase() === "all" ||
+                tech.category ===
+                  categories[currentCategoryId].name.toLowerCase(),
             )
             .sort((a, b) => a.category.localeCompare(b.category))
             .map((tech) => (

@@ -28,7 +28,7 @@
     @apply font-barriecito text-3xl;
   }
   p {
-    @apply font-arial text-xl/normal text-black;
+    @apply font-barlow-semi text-xl/normal text-black;
   }
 }
 
@@ -38,7 +38,7 @@
   }
 
   .tech-category {
-    @apply relative z-0 flex self-center;
+    @apply relative z-0 flex self-center bg-neutral-400 w-1/4;
   }
 
   .selected-category {
@@ -46,6 +46,18 @@
   }
 
   .tech-card {
-    @apply bg-secondary font-barlow-semi px-3 text-center text-lg text-white flex gap-2 flex-nowrap py-2 rounded-md;
+    @apply bg-secondary flex flex-nowrap gap-2 rounded-md px-3 py-2 text-center text-lg text-white;
+  }
+
+  .project-card {
+    @apply flex flex-col bg-neutral1/50 border-neutral1 border-3 px-3 py-6 gap-4 w-fit;
+  }
+
+  .project-card > p {
+    @apply w-full p-2 text-start text-lg;
+  }
+
+  .project-image {
+    @apply perspective-dramatic  h-full w-full drop-shadow-md/50 drop-shadow-accent  shadow-accent -rotate-y-30 -rotate-x-2 skew-x-2 rotate-z-2 -translate-y-10 -mb-8;
   }
 }
