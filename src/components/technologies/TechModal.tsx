@@ -27,13 +27,13 @@ function TechModal({
   return (
     <>
       <div className="fixed inset-0 z-0 h-dvh w-dvw bg-black/25"></div>
-      <div className="bg-primary border-neutral2 fixed inset-0 z-10 m-auto flex h-4/5 w-4/5 flex-col justify-stretch border-4 p-10 pt-18 text-center">
+      <div className="bg-primary border-neutral2 fixed inset-0 z-10 m-auto flex h-fit w-4/5 flex-col justify-stretch border-4 gap-5 p-10 pt-18 text-center">
         <h3 className="pb-4">{technology.name}</h3>
         <h4>
           <span className="font-bold">Category: </span>
           {technology.category}
         </h4>
-        <ul className="flex grow flex-col justify-evenly">
+        <ul className="flex grow flex-col gap-5">
           {techProjects.map((project) => (
             <li
               key={project.id}
