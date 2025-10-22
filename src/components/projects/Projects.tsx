@@ -16,7 +16,7 @@ function Projects() {
   return (
     <section className="my-10 flex flex-col items-center justify-center">
       <h2 className="mb-10 w-4/5">Projects</h2>
-      <ul className="flex w-full flex-col items-center gap-15">
+      <ul className="flex w-full flex-col items-center gap-15 md:grid md:grid-cols-2 md:">
         {projectList.map((project) => (
           <li key={project.id} className="project-card">
             {project.screenshot && (

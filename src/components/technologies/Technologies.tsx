@@ -41,10 +41,10 @@ function Technologies() {
   ];
 
   return (
-    <section className="flex h-dvh flex-col items-center justify-center">
+    <section className="flex h-dvh flex-col items-center justify-center md:h-fit md:my-48">
       <h2 className="mb-10 w-4/5">Technologies & Tools</h2>
       <div className="basis-1/2">
-        <ul className="flex items-center gap-3 text-lg">
+        <ul className="flex items-center justify-center gap-5 text-lg md:mb-2">
           {categories.map((category) => (
             <li
               key={category.id}
@@ -57,7 +57,7 @@ function Technologies() {
             </li>
           ))}
         </ul>
-        <div className="divider"></div>
+        <div className="h-0.25 w-full bg-black"></div>
         <ul className="mt-5 flex max-w-xl flex-wrap justify-center gap-x-2 gap-y-3">
           {techs
             .filter(
@@ -69,6 +69,7 @@ function Technologies() {
             .sort((a, b) => a.category.localeCompare(b.category))
             .map((tech) => (
               <div
+                key={tech.id}
                 className={`tech-card`}
                 onClick={() => {
                   openModal(tech);
@@ -84,7 +85,7 @@ function Technologies() {
                   }
                   alt={`${tech.name} icon`}
                 />
-                <li key={tech.id}>{tech.name}</li>
+                <li>{tech.name}</li>
               </div>
             ))}
         </ul>
