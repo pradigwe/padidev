@@ -34,7 +34,7 @@
 
 @layer components {
   .nav-icon {
-    @apply size-9 md:size-8;
+    @apply size-9 md:size-6;
   }
 
   .tech-category {

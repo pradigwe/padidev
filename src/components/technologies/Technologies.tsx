@@ -57,7 +57,7 @@ function Technologies() {
             </li>
           ))}
         </ul>
-        <div className="h-0.25 w-full bg-black"></div>
+        <div className="hidden md:block h-0.25 w-full bg-black"></div>
         <ul className="mt-5 flex max-w-xl flex-wrap justify-center gap-x-2 gap-y-3">
           {techs
             .filter(
