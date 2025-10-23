@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section className="pt-15 md:flex md:flex-row">
+    <section className="pt-15 md:flex md:flex-row ">
       <div className="flex flex-col md:w-2/3 md:gap-5">
         <div className="hidden md:mb-5 md:block">
           <h1 className="text-accent md:text-start">Hi, I'm Precious.</h1>
@@ -40,7 +40,7 @@ function About() {
       <img
         src={new URL(`../assets/mypicture.jpg`, import.meta.url).href}
         alt="picture of me"
-        className="hidden h-full md:block md:w-1/3 md:flex-initial max-w-200"
+        className="hidden h-full md:block md:w-1/3 md:flex-initial max-w-200 lg:size-80 lg:m-auto"
       />
     </section>
   );

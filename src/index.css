@@ -18,17 +18,17 @@
 
 @layer base {
   h1 {
-    @apply font-barriecito text-6xl md:text-4xl;
+    @apply font-barriecito text-6xl md:text-4xl lg:text-7xl;
   }
   h2 {
-    @apply font-barriecito text-center text-5xl md:text-4xl;
+    @apply font-barriecito text-center text-5xl md:text-4xl lg:text-6xl;
   }
 
   h3 {
     @apply font-barriecito text-3xl;
   }
   p {
-    @apply font-barlow-semi text-xl/normal text-black md:text-base;
+    @apply font-barlow-semi text-xl/normal text-black md:text-base lg:text-xl;
   }
 }
 
